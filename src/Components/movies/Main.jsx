@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Movies from '../../Contexts/Movies';
+import Movies from '../../Context/Movies';
 import Create from './Create';
 import List from './List';
 import axios from 'axios';

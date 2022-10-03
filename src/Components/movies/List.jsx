@@ -1,8 +1,6 @@
 import { useContext } from 'react';
-import Movies from "../../Contexts/Movies";
+import Movies from '../../Context/Movies';
 import Line from './Line';
-
-
 
 function List() {
 
