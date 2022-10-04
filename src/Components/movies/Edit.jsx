@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from 'react';
+import { useContext, useEffect, useRef, useState } from 'react';
 import Movies from '../../Context/Movies';
 import getBase64 from '../../Functions/getBase64';
 
@@ -7,7 +7,7 @@ function Edit() {
     const [title, setTitle] = useState('');
     const [price, setPrice] = useState('');
     const [cat, setCat] = useState(0);
-    const fileInput = useState();
+    const fileInput = useRef();
     const [photoPrint, setPhotoPrint] = useState(null);
 
     const doPhoto = () => {

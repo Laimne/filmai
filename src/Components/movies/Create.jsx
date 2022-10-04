@@ -1,4 +1,4 @@
-import { useState, useContext } from 'react';
+import { useState, useContext, useRef } from 'react';
 import Movies from '../../Context/Movies';
 import getBase64 from '../../Functions/getBase64';
 
@@ -7,7 +7,7 @@ function Create() {
     const [title, setTitle] = useState('');
     const [price, setPrice] = useState('');
     const [cat, setCat] = useState(0);
-    const fileInput = useState();
+    const fileInput = useRef();
 
     const { setCreateData, cats } = useContext(Movies);
 

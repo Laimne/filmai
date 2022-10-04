@@ -1,5 +1,5 @@
 import { useState, useContext } from 'react';
-import Movies from '../../Context/Movies';
+import Cats from '../../Context/Cats';
 import getBase64 from '../../Functions/getBase64';
 
 function Create() {
@@ -9,7 +9,7 @@ function Create() {
     const [cat, setCat] = useState(0);
     const fileInput = useState();
 
-    const { setCreateData, cats } = useContext(Movies);
+    const { setCreateData, cats } = useContext(Cats);
 
     const [photoPrint, setPhotoPrint] = useState(null);
 
